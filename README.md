@@ -1,4 +1,4 @@
-#ShanghaiTech, CS270-DIgital Image Processing(2024), Final Project--Shadow Detection and Removal
+# ShanghaiTech, CS270-DIgital Image Processing(2024), Final Project--Shadow Detection and Removal
 
 This project implements a MATLAB-based system for shadow detection and removal. It includes the project report, relevant source code, and final results. You can run the complete workflow by launching the MATLAB App file `shadowmover`.
 

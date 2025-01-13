@@ -88,9 +88,21 @@ Also, you can increase **offset** to gain brightness compensation and adjust **s
 ## **Slide 8: Video**
 Now let us show our whole shadow removal process from this video.
 
-## **Slide 10-16: Results and Discussion**
+## **Slide 9-16: Results and Discussion**
 
 Now, let’s look at some results.  
+
+[Slide9] This image shows a quite good shadow removal effect.
+
+[Slide10] The effect of shadow removal on this picture is also acceptable. However, it can be seen that we have made the smooth region of the boundary rather thick (large sigma in Gaussian filter). As a result, although the color transition on the boundary appears smooth, it seems that there is no texture on the boundary.
+
+[Slide11] This picture is challenging because of its grassland background, not as smooth as the ground. Initially, our shadow mask was messy. But with our algorithm, we can well extract shadow boundary, and the shadow removal effect is acceptable. We used brightness offset compensation here.
+
+[Slide12] The problem with this picture is that the brightness of the gaps between the floor tiles is lower than that of the human shadow. So when extracting the shadow mask, the human shadow and the gaps between the floor tiles will be connected together. You can see that in the result, the colors of some gaps have also been brightened.
+
+[Slide15] We did well in shadow extraction for this picture. But in color restoration, using global mean and variance for estimation made the walls and ground restored to similar colors.
+
+[Slide16] This picture has a similar issue. As sand takes up a large proportion, the shoe shadow's restored color is too close to sand's. A future solution is to use different neighboring pixels for estimation based on shadow area proportions.
 
 ---
 
